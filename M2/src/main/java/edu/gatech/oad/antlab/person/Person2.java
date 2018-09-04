@@ -32,9 +32,14 @@ public class Person2 {
 	private String calc(String input) {
 	  //Person 2 put your implementation here
 	  String newString;
+	  ArrayList<Char>() list = new ArrayList(input.length());
 	  for (int i = 0; i < input.length(); i++) {
-	      Math.rand();
+	      list.add(newString.charAt(i));
       }
+      while (list.length() > 0) {
+	  	  newString += list.remove(Math.rand(list.length()))
+	  }
+	  return newString;
 	}
 	/**
 	 * Return a string rep of this object
