@@ -32,7 +32,9 @@ public class Person2 {
 	private String calc(String input) {
 	  //Person 2 put your implementation here
 	  String newString;
-	  for (int i = 0; i < input.length(); i++)
+	  for (int i = 0; i < input.length(); i++) {
+	      Math.rand();
+      }
 	}
 	/**
 	 * Return a string rep of this object
