@@ -32,7 +32,7 @@ public class Person6 {
 	private String calc(String input) {
 	  //Person 6 put your implementation here
 		String mon = input.substring(0,2);
-		input = input.substring(0,2);
+		input = input.substring(2);
 		return input + mon;
 	}
 	
