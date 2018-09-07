@@ -29,17 +29,17 @@ public class Person2 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  String newString;
-	  ArrayList<Char>() list = new ArrayList(input.length());
-	  for (int i = 0; i < input.length(); i++) {
-	      list.add(newString.charAt(i));
-      }
-      while (list.length() > 0) {
-	  	  newString += list.remove(Math.rand(list.length()))
-	  }
-	  return newString;
+	private static String calc(String input) {
+		//Person 2 put your implementation here
+		String newString = "";
+		ArrayList<Character> list = new ArrayList(input.length());
+		for (int i = 0; i < input.length(); i++) {
+			list.add(input.charAt(i));
+		}
+		while (list.size() > 0) {
+			newString += list.remove((int) (Math.random() * list.size()));
+		}
+		return newString;
 	}
 	/**
 	 * Return a string rep of this object
@@ -50,6 +50,6 @@ public class Person2 {
 	 *         object
 	 */
 	public String toString(String input) {
-	  return name + calc(input);
+		return name + calc(input);
 	}
 }
