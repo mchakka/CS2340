@@ -32,8 +32,8 @@ public class Person1 {
 	private String calc(String input) {
 	  //Person 1 put your implementation here
 	  String temp = input.substring(0, 2);
-	  String temp2 = input.subString(2);
-	  return temp + temp2;
+	  String temp2 = input.substring(2);
+	  return temp2 + temp;
 
 	}
 	
